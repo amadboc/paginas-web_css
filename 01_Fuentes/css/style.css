@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@font-face {font-family:'Perma';
+            src:url('../assets/PermanentMarker-Regular.ttf')};
+
 *,
 *::after, *::before,
-*:after, *:before,{
-box-sizing:border-box;
+*:after, *:before {
+    box-sizing: border-box;
 }
 
 body {
@@ -9,5 +13,14 @@ body {
 }
 
 h1 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family: Perma, cursive;
 }
+
+h2 {
+    font-family: Pacifico, cursive;
+}
+
+p {
+    font-family: Roboto, Verdana, Arial, sans-serf;
+}
+
