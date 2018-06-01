@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
-@font-face {font-family:'Perma';
-            src:url('../assets/PermanentMarker-Regular.ttf')};
+@font-face { font-family: 'Perma';
+             src: url('../assets/PermanentMarker-Regular.ttf')};
 
 *,
 *::after, *::before,
@@ -9,11 +9,28 @@
 }
 
 body {
-    background-color: aquamarine;
+    background-color: bisque;
 }
+
+.icono_inicio {
+    position: absolute;
+    font-size: 3rem;
+    padding: 1rem;
+    background-color: brown;
+    border-radius: 50%;
+    color: blue;
+    cursor: pointer;
+    font-style: italic;
+}
+.icono_inicio:hover {
+    background-color: olive;
+    color:tomato;
+    font-size: 4rem;
+} 
 
 h1 {
     font-family: Perma, cursive;
+    font-size: 5rem;
 }
 
 h2 {
