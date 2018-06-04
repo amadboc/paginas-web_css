@@ -2,3 +2,17 @@
 * {
     box-sizing: border-box;
 }
+
+h1 {
+    font-size: 3rem;
+    color: beige;
+    background-color: brown;
+}
+
+
+h2   {
+    font-size: 2rem;
+    color: brown;
+}
+
+ 
