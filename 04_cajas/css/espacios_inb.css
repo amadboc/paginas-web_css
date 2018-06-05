@@ -39,3 +39,12 @@ p {
  .clearfix {
      clear: both;
  }
+
+ span {
+     font-size: 5rem;
+ }
+
+ blockquote {
+     color: bisque;
+     font-weight: 900;
+ }
