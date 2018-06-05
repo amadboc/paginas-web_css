@@ -3,10 +3,44 @@
     box-sizing: border-box;
 }
 
+header {
+    background-color:bisque;
+    width: 100%;
+}
+
 h1 {
-    font-size: 3rem;
-    color: beige;
-    background-color: brown;
+    width: 30%;
+    color: brown;
+    float: left;
+}
+
+nav li a {
+    color: bisque;
+    text-align: center;
+    background-color:brown;
+    margin-left: 5%;
+    vertical-align: middle;
+}
+
+ul {
+    width: 70%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:bisque;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color:brown;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 
