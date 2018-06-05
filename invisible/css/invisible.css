@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 2rem;
+}
+
+section div {
+    float: left;
+    background-color: bisque;
+    padding: 0.5rem;
+}
+
+section div.text-wrapper {
+    width: 60%;
+}
+
+section div.img-wrapper {
+    width: 30%;
+    padding: 2rem;
+    /* display:none; */
+    visibility: hidden;
+}
+
+section div.wrapper:hover div.img-wrapper {
+    /* display: block; */
+    visibility: visible;
+}
+
+img {
+    width: 100%;
+}
