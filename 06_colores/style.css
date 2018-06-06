@@ -14,3 +14,22 @@ section>div>div {
     background-color: blueviolet;
     opacity: 1;
 }
+
+aside>div{
+}
+
+/*el gradiente lo he generado con http://layerstyles.org/*/
+
+div {
+border: 1px solid black;
+background-image: -webkit-gradient(linear, center top, center bottom, from(rgb(252,199,54) 28%), to(rgb(228,42,50)), color-stop(67%, rgb(233,93,59)));
+background-image: -webkit-linear-gradient(top, rgb(252,199,54) 28%, rgb(233,93,59) 67%, rgb(228,42,50));
+background-image: -moz-linear-gradient(top, rgb(252,199,54) 28%, rgb(233,93,59) 67%, rgb(228,42,50));
+background-image: -o-linear-gradient(top, rgb(252,199,54) 28%, rgb(233,93,59) 67%, rgb(228,42,50));
+background-image: -ms-linear-gradient(top, rgb(252,199,54) 28%, rgb(233,93,59) 67%, rgb(228,42,50));
+background-image: linear-gradient(to bottom, rgb(252,199,54) 28%, rgb(233,93,59) 67%, rgb(228,42,50));
+-webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.75);
+-moz-box-shadow: 0 1px 5px rgba(0,0,0,0.75);
+box-shadow: 0 1px 5px rgba(0,0,0,0.75);
+}
+
