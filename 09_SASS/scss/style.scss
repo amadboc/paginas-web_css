@@ -1,0 +1,28 @@
+// Esto es css
+//body {
+//     margin: 2rem;
+//     background-color: bisque;
+// }
+
+// header h1 {
+//     color:brown;
+// }
+
+// header p {
+//     font-size: 1.5rem;
+// }
+
+//esto es Scss
+body {
+    margin: 2rem;
+    background-color: bisque;
+}
+
+header {
+   width: 60%;
+   margin-left: auto;
+   margin-right: auto;
+   h1 {color:brown;
+} 
+   p {font-size: 1.5rem;}
+}
