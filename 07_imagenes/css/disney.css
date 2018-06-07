@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+}
+
+header h1 {
+    height: 10rem;
+    width: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: bisque;
+    background-image: url("../assets/walt_disney_logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+/* para ocultar algo sin que te penalice google*/
+/* header span {
+    /* display:none;
+} */    
+
+.oculto {
+    display: none;
+}
