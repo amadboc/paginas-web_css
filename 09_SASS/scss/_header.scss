@@ -1,0 +1,10 @@
+body {
+    background-color: bisque;
+}
+
+header {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    @import 'header2.scss';
+  }
