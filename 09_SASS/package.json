@@ -4,8 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "paralellshell \"npm run server\" \"run vigilar\"",
+    "server": "http-server",
+    "pre-css":"sass scss:css",
     "sass": "sass scss:css",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "vigilar":"nodemon -w scss -x \"sass scss:css\"" 
   },
   "keywords": [],
   "author": "",
