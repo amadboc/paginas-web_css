@@ -4,14 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "paralellshell \"npm run server\" \"run vigilar\"",
+    "start": "parallelshell \"npm run server\" \"npm run vigilar\"",
     "server": "http-server",
-    "pre-css":"sass scss:css",
+    "pre-css": "sass scss:css",
     "sass": "sass scss:css",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "vigilar":"nodemon -w scss -x \"sass scss:css\"" 
+    "vigilar": "nodemon -e scss -x \"sass scss:css\""
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.1.1"
+  }
 }
