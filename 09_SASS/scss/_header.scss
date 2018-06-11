@@ -1,10 +1,20 @@
-body {
-    background-color: bisque;
-}
+$fondo: rgb(124, 250, 208);
+$fondo1: rgb(150, 2, 5);
+$fondo2: mix($fondo,$fondo1);
+$margen1: 20%;
+$margen2: 10%;
+$margen3: $margen1 + $margen2;
 
 header {
+
     width: 60%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: $margen3;
+    margin-right: auto;  
     @import 'header2.scss';
-  }
+    
+    &:hover {
+        background-color: saturate(darken($fondo,15),10);
+    }
+
+    p:hover {color: blue}
+}

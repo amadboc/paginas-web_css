@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "parallelshell \"npm run server\" \"npm run vigilar\"",
-    "server": "http-server",
+    "server": "http-server../",
     "pre-css": "sass scss:css",
     "sass": "sass scss:css",
     "test": "echo \"Error: no test specified\" && exit 1",
