@@ -1,0 +1,20 @@
+{
+  "name": "10_Layouts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parallelshell \"npm run server\" \"npm run vigilar\"",
+    "server": "http-server../",
+    "pre-css": "sass scss:css",
+    "sass": "sass scss:css",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "vigilar": "nodemon -e scss -x \"sass scss:css\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.1.1"
+  }
+}
