@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+div {
+  width: 50%;
+  height: 40%;
+  background-color: salmon;
+  padding: 2rem;
+  position: absolute;
+}
+div p {
+  padding: 2rem;
+  background-color: lightblue;
+}
+
+.relative {
+  position: relative;
+  top: -4rem;
+  right: 0;
+}
+
+.absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*# sourceMappingURL=css/style.css.map */
