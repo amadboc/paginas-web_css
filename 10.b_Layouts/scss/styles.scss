@@ -1,13 +1,29 @@
+@mixin reset($tipo: full) {
+    @if ($tipo==full) 
+    {
+        margin: 0;
+        padding: 0;    
+    } @else if ($tipo==vert) {
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
 * {
-    box-sizing: border-box,
+    box-sizing: border-box;
+}
+
+body {
+   @include reset();
 }
 
 header {
     position: relative;
     height: 100vh;
-
-    div { 
-        position: absolute;
+    
+    div { position: absolute;
         width: 100%;
         height: 100%;
         background-image: url('../assets/home-bg.jpg');
@@ -23,81 +39,91 @@ header {
             content: "";
             background-color: darkgray;
             opacity: 0.5; }
-    }    
-h1 {
-    position: relative;
-    clear: both;
-    text-align: center;
-    padding-top: 0;
-    padding-bottom: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 100vh;
-    font-family: 'Abril Fatface', cursive;
-    font-size: 2.4rem;
     }
-}    
+    h1 {
+        position: relative;
+        clear: both;
+        text-align: center;
+        @include reset(vert);
+        line-height: 100vh;
+        font-family: 'Abril Fatface', cursive;
+        font-size: 2.4rem;
+    }
+}
 
 nav {
     position: absolute;
     z-index: 10;
     right: 0;
-    ul {
+    ul{
         list-style: none;
-        padding: 0;
-        a:hover>ul {
-        background-color: maroon;
+        padding: 0;  
+        ul {
+            display: none;
         }
+        li:hover>ul {
+            display: block;
+        }
+    }
+    a {
+        color: inherit;
+        text-decoration: none;
+        padding: 0.2rem 2rem;
+        display: block;
+    }
+    a:hover {
+        color: aliceblue;
+        background-color: brown
     } 
-}      
-              
-    >ul { 
+    >ul {
         >li {
             display: inline-block;
             position: relative;
             &:hover>ul {
                 position: absolute;
-                top: 2rem;
-                left: 1.3rem;
+                top: 2.5rem;
+                left: 1rem;
+            }  
+            >a {
+                padding: 1.5rem 2rem;
+                display: inline;
             }
-        >a {
-            padding: 1.5rem 2rem;
-        } 
-        >ul>li:hover ul {
-            padding: 1.5rem 3rem;
-        }
-         
-  
+            >ul>li:hover ul{
+                position: absolute;
+                top: 0rem;
+                left: 6rem;
+            }
+        }    
+    } 
+}
 
-    main {
-        overflow: auto;
-        margin-right:10%;
-        margin-left:10%;
-        font-family: 'Lora', serif;
-    }
-
+main {
+    overflow: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: 'Lora', serif;
+}
 section {
     width: 75%;
     float: left;
-    padding-right: 3rem;
-}
+    padding-right: 3rem; 
 
-h2 {
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
+    h2 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 
-div {
-    width: 50%;
-    float: left;
-    padding-left: 1rem;
-    padding-right: 1rem; 
+    div {
+        width: 50%;
+        float: left;
+        padding-left: 1rem;
+        padding-right: 1rem; 
 
-    p:nth-of-type(1) {
-        margin-top: 0;
+        p:nth-of-type(1) {
+            margin-top: 0;
+        }
     }
 }
-
 aside {
     padding-left: 3rem;
     width: 25%;
