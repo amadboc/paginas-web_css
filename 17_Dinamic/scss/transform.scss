@@ -1,0 +1,53 @@
+body {
+    margin-left: 2rem;
+}
+
+div {
+    width: 10rem;
+    height: 10rem;
+    background-color: brown;
+    display: block;
+    transition: transform 3s linear;
+}
+
+button {
+    margin-bottom: 2rem;
+}
+
+section {
+    margin-top: 2rem;
+    min-height: 80vh;
+}
+
+
+
+.rotate button:hover+div {
+        //transform-origin: top left;   
+        transform: rotate(45deg);
+        }
+
+.skew {
+    button:hover+div {
+        transform: skew(45deg);
+        }
+}  
+
+.scale button:hover+div {
+        transform-origin: left;
+        transform: scaleX(2);
+        //transform: scale(1.5 2.5);
+        }
+
+.translate {
+    button:hover+div {
+        transform-origin: left;
+        transform: translateX(20rem);
+        }
+} 
+
+  /*
+  space -> descendiente
+  > -> hijo
+  + -> hermano adyacente
+  ~ -> hermano que no es adyacente
+  */   
