@@ -107,9 +107,12 @@ footer {
     text-align: center;
 } 
 
-  .bottom-menu {
+.bottom-menu {
     display: none;
-  }
+}
+
+header nav {
+  display: none;
 }
 
 /*para que en el formato table o escritorio no se haga el texto muy largo y dificulte la lectura. Se le pone un max-width. Se suele iempre en las ultimas mediaQuerys*/ 
@@ -149,4 +152,5 @@ header nav {
     padding-left: 1rem;
     margin-left: 1rem;
   }
+}
 }
