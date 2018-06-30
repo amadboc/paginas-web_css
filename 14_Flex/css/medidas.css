@@ -1,5 +1,5 @@
 html {
-    background-color: aqua;
+    background-color: aqua
 }
 
 section {
@@ -7,10 +7,10 @@ section {
     width: 100px;
     height: 200px;
 }
-
 div {
     background-color: salmon;
+    border: 1px solid;
     width: 20%;
-    height: 50vh;
+    height: 20%;
     margin: 50%;
 }
