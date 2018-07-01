@@ -141,6 +141,7 @@ nav.bottom-menu {
  nav > ul > li > a {
   padding: 1.5rem 2rem;
   display: inline;
+  margin-left: 1rem;
 }
 
   nav.desk-menu a:hover {
