@@ -98,6 +98,11 @@ header h1 {
 .main_wrapper {
   width: 80%,
 }
+
+nav.desk-menu {
+display: none;
+}
+
 /*para que en el formato table o escritorio no se haga el texto muy largo y dificulte la lectura. Se le pone un max-width. Se suele iempre en las ultimas mediaQuerys*/ 
 
 @media screen and (min-width: 820px) {
@@ -123,7 +128,7 @@ nav.bottom-menu {
   nav.desk-menu {
     display: block;
     background-color:darkgray;
-    color:black;
+    color:white;
     font-family: 'Encode Sans Semi Expanded', sans-serif;
     font-size: 1.3rem;
     right: 0;
@@ -133,12 +138,13 @@ nav.bottom-menu {
     display: flex;
  }
 
-  nav.menu-desk a {
-    padding: 2rem 2rem;
+ nav > ul > li > a {
+  padding: 1.5rem 2rem;
+  display: inline;
 }
 
   nav.desk-menu a:hover {
-    color: white;
+    color: seagreen;
   }
 
 main {
