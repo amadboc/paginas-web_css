@@ -113,7 +113,11 @@ header h1 {
   margin-bottom: 1rem;
   }
 
-  .fa-bars:before {
+h2 {
+  margin-top: 2rem;
+}
+
+.fa-bars:before {
     display:none;
   }
 
