@@ -21,6 +21,7 @@ h1 {
   font-family: 'Encode Sans Semi Expanded', sans-serif;
   color:seagreen;
   margin-left: 1rem;
+  margin-top:0.5rem;
   float: left;
 }
 
@@ -33,14 +34,6 @@ h2 {
   content: "\f0c9";
   color: darkgrey;
   font-size: 2rem;
-  margin-top: 1rem;
-}
-
-nav.menu-mobile a {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 1rem;
-  text-decoration: none;
 }
 
 nav a {
@@ -48,16 +41,23 @@ nav a {
   text-decoration: none;
   } 
 
-nav.bottom-menu {
-  background-color: darkgrey;
-  font-size: 0.9rem;
-  font-family: 'Encode Sans Semi Expanded', sans-serif;
-  color: white;
-  margin-left: 1.5rem;
-  text-decoration: none;
-} 
+  nav.menu-mobile {
+    background-color: darkgrey;
+    font-size: 0.9rem;
+    font-family: 'Encode Sans Semi Expanded', sans-serif;
+    color: white;
+    margin-left: 1.5rem;
+    text-decoration: none;
+  } 
 
-nav.bottom-menu a:hover {
+  nav.menu-mobile a {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  text-decoration: none;
+}
+
+nav.menu-mobile a:hover {
   color: seagreen;
 }
 
@@ -107,11 +107,11 @@ nav.desk-menu {
 display: none;
 }
 
-nav.bottom-menu ul {
+nav.menu-mobile ul {
   display: flex;
 }
 
-nav.bottom-menu ul>li {
+nav.menu-mobile ul>li {
   flex: 1 1 auto;
   margin-left: 1rem;
 }
@@ -121,7 +121,7 @@ nav.bottom-menu ul>li {
   margin-left: 1.5rem;
 } */
 
-nav.bottom-menu a:hover {
+nav.menu-mobile a:hover {
   color: seagreen;
 }
 
@@ -144,7 +144,7 @@ h2 {
     display:none;
   }
 
-nav.bottom-menu {
+nav.menu-mobile {
     display: none;
   } 
 
