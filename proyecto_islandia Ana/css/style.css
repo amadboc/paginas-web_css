@@ -60,8 +60,9 @@ h2 {
 nav a {
   color: inherit;
   text-decoration: none;
-  } 
+ }
 
+ /*menu movil abajo*/
   nav.menu-mobile {
     background-color: darkgrey;
     font-size: 0.9rem;
@@ -76,12 +77,14 @@ nav a {
   padding-bottom: 0.5rem;
   padding-left: 1rem;
   text-decoration: none;
+  color: inherit;
 }
 
 nav.menu-mobile a:hover {
   color: seagreen;
 }
 
+/*menu escritorio arriba*/
 nav.desk-menu {
   display: none;
 } 
@@ -124,10 +127,12 @@ header h1 {
   width: 80%,
 }
 
+/*menu escritorio arriba*/
 nav.desk-menu {
 display: none;
 }
 
+/*menu movil abajo*/
 nav.menu-mobile ul {
   display: flex;
 }
@@ -137,16 +142,9 @@ nav.menu-mobile ul>li {
   margin-left: 1rem;
 }
 
-/* nav > ul > li > a {
-  padding: 1rem 1.4rem;
-  margin-left: 1.5rem;
-} */
-
 nav.menu-mobile a:hover {
   color: seagreen;
 }
-
-/*para que en el formato table o escritorio no se haga el texto muy largo y dificulte la lectura. Se le pone un max-width. Se suele iempre en las ultimas mediaQuerys*/ 
 
 @media screen and (min-width: 820px) {
 
@@ -161,14 +159,17 @@ h2 {
   margin-top: 2rem;
 }
 
+/*menu hamburguesa*/
 .fa-bars:before {
     display:none;
   }
 
+/*menu movil abajo*/
 nav.menu-mobile {
     display: none;
   } 
 
+/*menu escritorio arriba*/
   nav.desk-menu {
     clear: both;
   }
@@ -182,20 +183,16 @@ nav.menu-mobile {
     right: 0;
     top: 1.2rem;
   }
+
 nav.desk-menu ul {
     display: flex;
+    text-decoration: none;
  }
 
 nav.desk-menu ul>li {
   flex: 1 1 auto;
   margin-left: 1.5rem;
 }
-
-/* nav > ul > li > a {
-  padding: 1.5rem 2rem;
-  display: inline;
-  margin-left: 1.5rem;
-} */
 
   nav.desk-menu a:hover {
     color: seagreen;
