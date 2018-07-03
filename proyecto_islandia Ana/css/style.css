@@ -30,6 +30,28 @@ h2 {
   color:seagreen;
 }
 
+/*Tabla*/
+.customers {
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+.customers td, .customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+.customers tr:nth-child(even){
+  background-color: lightgray;
+}
+.customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color:seagreen;
+  color: white;
+}
+
+/*menu hamburguesa*/
 .fa-bars:before {
   content: "\f0c9";
   color: darkgrey;
