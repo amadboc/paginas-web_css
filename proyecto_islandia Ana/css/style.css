@@ -1,0 +1,230 @@
+* {
+  box-sizing: border-box;
+}
+
+body, h1, h2, figure, nav ul, nav li {
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/*mediaQuery 0:mobile*/
+
+img {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+h1 {
+  width: 85%;
+  font-size: 1.8rem;
+  color:seagreen;
+  margin-left: 1rem;
+  margin-top:0.5rem;
+  float: left;
+}
+
+h2 {
+  color:seagreen;
+}
+
+/*Tabla*/
+.customers {
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+.customers td, .customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+.customers tr:nth-child(even){
+  background-color: lightgray;
+}
+.customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color:seagreen;
+  color: white;
+}
+
+/*menu hamburguesa*/
+.fa-bars:before {
+  content: "\f0c9";
+  color: darkgrey;
+  font-size: 2rem;
+}
+
+nav a {
+  color: inherit;
+  text-decoration: none;
+ }
+
+ /*menu movil abajo*/
+  nav.menu-mobile {
+    background-color: darkgrey;
+    font-size: 0.9rem;
+    font-family: 'Encode Sans Semi Expanded', sans-serif;
+    color: white;
+    margin-left: 1.5rem;
+    text-decoration: none;
+  } 
+
+  nav.menu-mobile a {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+nav.menu-mobile a:hover {
+  color: seagreen;
+}
+
+/*menu escritorio arriba*/
+nav.desk-menu {
+  display: none;
+} 
+
+.main_wrapper {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+  font-size: 0.8rem;
+}
+
+main {
+  margin-left:1rem;
+  margin-top:1rem;
+}
+
+footer {
+  border-top: 1px solid;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  text-align: center;
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 620px) {
+
+header h1 {
+  font-size:2.3rem;
+}
+
+.fa-bars:before {
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+
+.main_wrapper {
+  width: 80%,
+}
+
+/*menu escritorio arriba*/
+nav.desk-menu {
+display: none;
+}
+
+/*menu movil abajo*/
+nav.menu-mobile ul {
+  display: flex;
+}
+
+nav.menu-mobile ul>li {
+  flex: 1 1 auto;
+  margin-left: 1rem;
+}
+
+nav.menu-mobile a:hover {
+  color: seagreen;
+}
+
+@media screen and (min-width: 820px) {
+
+header h1 {
+  font-size: 2.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  float:left;
+  }
+
+h2 {
+  margin-top: 2rem;
+}
+
+/*menu hamburguesa*/
+.fa-bars:before {
+    display:none;
+  }
+
+/*menu movil abajo*/
+nav.menu-mobile {
+    display: none;
+  } 
+
+/*menu escritorio arriba*/
+  nav.desk-menu {
+    clear: both;
+  }
+
+  nav.desk-menu {
+    display: block;
+    background-color:darkgray;
+    color:white;
+    font-family: 'Encode Sans Semi Expanded', sans-serif;
+    font-size: 1.3rem;
+    right: 0;
+    top: 1.2rem;
+  }
+
+nav.desk-menu ul {
+    display: flex;
+    text-decoration: none;
+ }
+
+nav.desk-menu ul>li {
+  flex: 1 1 auto;
+  margin-left: 1.5rem;
+}
+
+  nav.desk-menu a:hover {
+    color: seagreen;
+  }
+
+main {
+  width: 100%;
+}
+
+figure {
+  width: 50%;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  float: left;
+}
+
+img {
+  margin-top: 1rem;
+}
+
+.main_wrapper p {
+    margin-top: 1rem;
+    }
+
+section h2 {
+    padding-left: 1rem;
+    margin-left: 1rem;
+    clear: both;
+  }
+
+footer {
+  clear: both;
+}
+}
+}
