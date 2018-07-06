@@ -61,6 +61,7 @@ h2 {
   content: "\f0c9";
   color: darkgrey;
   font-size: 2rem;
+
 }
 
  /*menu movil abajo*/
@@ -71,7 +72,13 @@ h2 {
     color: white;
     text-decoration: none;
     text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   } 
+
+  nav.menu-mobile li {
+    margin-bottom: 0.5rem;
+  }
 
   nav.menu-mobile a {
   padding-top: 0.5rem;
@@ -109,6 +116,15 @@ nav.desk-menu {
   text-decoration: none; /*decoración texto*/
   border-radius: 10px; /*bordes redondos*/
   }
+
+.button_s {
+    border: 1px solid darkgray; /*anchura, estilo y color borde*/
+    padding: 5px; /*espacio alrededor texto*/
+    background-color: darkgray; /*color botón*/
+    color: white; /*color texto*/
+    text-decoration: none; /*decoración texto*/
+    border-radius: 10px; /*bordes redondos*/
+    }
 
 main {
   margin-left:1rem;
@@ -152,10 +168,11 @@ nav.menu-mobile ul {
 nav.menu-mobile ul>li {
   flex: 1 1 auto;
   margin-left: 1rem;
+  margin-bottom: 0;
 }
 
 nav.menu-mobile a:hover {
-  color: seagreen;
+  color: darkgray;
 }
 
 @media screen and (min-width: 820px) {
@@ -227,7 +244,16 @@ img {
 
 .main_wrapper p {
     margin-top: 1rem;
+    margin-left: 1.8rem;
     }
+
+.button_s {
+      margin-left: 1.8rem;
+      }
+
+.button {
+      margin-top: 1rem;
+      }
 
 section h2 {
     padding-left: 1rem;
