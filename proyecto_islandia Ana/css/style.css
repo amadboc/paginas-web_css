@@ -9,6 +9,11 @@ body, h1, h2, figure, nav ul, nav li {
   list-style-type: none;
 }
 
+nav a {
+  color: inherit;
+  text-decoration: none;
+ }
+
 /*mediaQuery 0:mobile*/
 
 img {
@@ -28,11 +33,6 @@ h1 {
 h2 {
   color:seagreen;
 }
-
-nav a {
-  color: inherit;
-  text-decoration: none;
- }
 
 /*Tabla*/
 .customers {
