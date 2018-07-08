@@ -61,7 +61,6 @@ h2 {
   content: "\f0c9";
   color: darkgrey;
   font-size: 2rem;
-
 }
 
  /*menu movil abajo*/
@@ -223,9 +222,9 @@ nav.desk-menu ul>li {
   margin-left: 1.5rem;
 }
 
-  nav.desk-menu a:hover {
-    color: seagreen;
-  }
+nav.desk-menu a:hover {
+  color: seagreen;
+}
 
 main {
   width: 100%;
@@ -236,10 +235,7 @@ figure {
   margin-right: 2rem;
   margin-left: 2rem;
   float: left;
-}
-
-img {
-  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 .main_wrapper p {
