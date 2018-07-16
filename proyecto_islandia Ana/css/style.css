@@ -20,6 +20,11 @@ nav a {
    text-align: center;
  }
 
+ a.button_CFTIC {
+    text-decoration: none;
+    color:seagreen;
+ }
+
 /*mediaQuery 0:mobile*/
 
 img {
